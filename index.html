@@ -131,7 +131,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 @media (max-width:720px){.bens{grid-template-columns:1fr}}
 
 /* prizes */
-.prizes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.prizes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .prize{background:#fff;border:1px solid var(--line);padding:32px 20px 26px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px}
 .medal{width:132px;height:132px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:inset 0 0 0 5px rgba(255,255,255,.35);margin-bottom:16px}
 .medal .lock{--h:76px}
@@ -145,7 +145,8 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .rewards div{border-top:2px solid var(--ink);padding-top:14px}
 .rewards b{display:block;color:var(--ink);font-weight:600}
 .rewards span{font-size:14px;color:var(--mute)}
-@media (max-width:900px){.prizes,.rewards{grid-template-columns:repeat(2,minmax(0,1fr))}.rewards{gap:20px 24px}}
+@media (max-width:900px){.rewards{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 24px}}
+@media (max-width:560px){.prizes{gap:8px}.prize{padding:20px 8px 16px}.prize h3{font-size:16px}.prize .k{font-size:12px}.medal{width:84px;height:84px;margin-bottom:10px}.medal .lock{--h:50px}}
 
 /* stepper */
 .steps-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--line)}
@@ -582,7 +583,7 @@ a,button,summary,label{-webkit-tap-highlight-color:rgba(255,49,49,.15)}
         <a class="btn" href="#participar">Ver cómo participar</a>
       </div>
       <div class="kpis">
-        <div class="kpi"><div class="n">4</div><div class="l">premios</div></div>
+        <div class="kpi"><div class="n">3</div><div class="l">premios</div></div>
         <div class="kpi"><div class="n">7</div><div class="l">jurados expertos</div></div>
         <div class="kpi"><div class="n">+100k</div><div class="l">seguidores de alcance</div></div>
       </div>
@@ -614,7 +615,7 @@ a,button,summary,label{-webkit-tap-highlight-color:rgba(255,49,49,.15)}
 <section class="sec" id="premios">
   <div class="wrap">
     <div class="sec-head">
-      <div><div class="eyebrow">Premios y beneficios</div><h2>Todos ganan visibilidad. Cuatro se llevan el premio.</h2></div>
+      <div><div class="eyebrow">Premios y beneficios</div><h2>Todos ganan visibilidad. Tres se llevan el premio.</h2></div>
       <div><div class="seg" role="tablist" aria-label="Beneficios">
         <button role="tab" id="t-todos" aria-controls="p-todos" aria-selected="true">Todos los participantes</button>
         <button role="tab" id="t-gan" aria-controls="p-gan" aria-selected="false">Ganadores</button>
@@ -634,7 +635,6 @@ a,button,summary,label{-webkit-tap-highlight-color:rgba(255,49,49,.15)}
         <div class="prize"><div class="medal m-oro"><div class="lock"><img class="lau" src="img/foto-03.png" alt=""><div class="t"><span class="a">El mejor</span><span class="b">Sushi</span><span class="c"><small>de</small>Ovalle</span><span class="d">2027</span></div><img class="lau" src="img/foto-05.png" alt=""></div></div><h3>Premio Oro</h3><div class="k">Primer lugar del jurado</div></div>
         <div class="prize"><div class="medal m-plata"><div class="lock"><img class="lau" src="img/foto-03.png" alt=""><div class="t"><span class="a">El mejor</span><span class="b">Sushi</span><span class="c"><small>de</small>Ovalle</span><span class="d">2027</span></div><img class="lau" src="img/foto-05.png" alt=""></div></div><h3>Premio Plata</h3><div class="k">Segundo lugar del jurado</div></div>
         <div class="prize"><div class="medal m-bronce"><div class="lock"><img class="lau" src="img/foto-03.png" alt=""><div class="t"><span class="a">El mejor</span><span class="b">Sushi</span><span class="c"><small>de</small>Ovalle</span><span class="d">2027</span></div><img class="lau" src="img/foto-05.png" alt=""></div></div><h3>Premio Bronce</h3><div class="k">Tercer lugar del jurado</div></div>
-        <div class="prize"><div class="medal m-pop"><div class="lock"><img class="lau" src="img/foto-03.png" alt=""><div class="t"><span class="a">El mejor</span><span class="b">Sushi</span><span class="c"><small>de</small>Ovalle</span><span class="d">2027</span></div><img class="lau" src="img/foto-05.png" alt=""></div></div><h3>Local Más Popular</h3><div class="k">Votación abierta en redes oficiales</div></div>
       </div>
       <div class="rewards">
         <div><b>Galardón físico</b><span>Para el exterior o el interior del local</span></div>
@@ -761,7 +761,7 @@ a,button,summary,label{-webkit-tap-highlight-color:rgba(255,49,49,.15)}
     </div>
     <div class="novote">
       <span class="nv-ic" aria-hidden="true">✓</span>
-      <div><b>Nuevo en 2027: solo votan jurados seleccionados</b>Este año eliminamos las votaciones de influencers y del público. Todos los votos que definen los premios del jurado vienen de los 7 jurados seleccionados, con la misma pauta para todos.</div>
+      <div><b>Nuevo en 2027: sin jueces de redes sociales ni del público</b>Este año no hay jueces influencers ni jurados elegidos por el público, y eliminamos esas votaciones. Los 3 premios se definen solo con los votos de los 7 jurados seleccionados, con la misma pauta para todos.</div>
     </div>
     <div class="jury"><div class="juror"><svg viewBox="0 0 110 130" aria-hidden="true"><circle cx="55" cy="40" r="32" fill="#DCDCD7"/><path d="M5 130c0-34 22-56 50-56s50 22 50 56z" fill="#DCDCD7"/></svg>Jurado 1</div><div class="juror"><svg viewBox="0 0 110 130" aria-hidden="true"><circle cx="55" cy="40" r="32" fill="#DCDCD7"/><path d="M5 130c0-34 22-56 50-56s50 22 50 56z" fill="#DCDCD7"/></svg>Jurado 2</div><div class="juror"><svg viewBox="0 0 110 130" aria-hidden="true"><circle cx="55" cy="40" r="32" fill="#DCDCD7"/><path d="M5 130c0-34 22-56 50-56s50 22 50 56z" fill="#DCDCD7"/></svg>Jurado 3</div><div class="juror"><svg viewBox="0 0 110 130" aria-hidden="true"><circle cx="55" cy="40" r="32" fill="#DCDCD7"/><path d="M5 130c0-34 22-56 50-56s50 22 50 56z" fill="#DCDCD7"/></svg>Jurado 4</div><div class="juror"><svg viewBox="0 0 110 130" aria-hidden="true"><circle cx="55" cy="40" r="32" fill="#DCDCD7"/><path d="M5 130c0-34 22-56 50-56s50 22 50 56z" fill="#DCDCD7"/></svg>Jurado 5</div><div class="juror"><svg viewBox="0 0 110 130" aria-hidden="true"><circle cx="55" cy="40" r="32" fill="#DCDCD7"/><path d="M5 130c0-34 22-56 50-56s50 22 50 56z" fill="#DCDCD7"/></svg>Jurado 6</div><div class="juror"><svg viewBox="0 0 110 130" aria-hidden="true"><circle cx="55" cy="40" r="32" fill="#DCDCD7"/><path d="M5 130c0-34 22-56 50-56s50 22 50 56z" fill="#DCDCD7"/></svg>Jurado 7</div><div class="juror r">Identidad reservada</div></div>
     <figure class="tvfig" style="margin-top:24px"><img src="img/foto-10.jpg" alt="Jurado de la edición 2026 con credenciales" style="object-position:center 40%"><figcaption><b>Así fue el jurado 2026</b>Profesionales de la gastronomía evaluaron cada propuesta con credencial de jurado. El jurado 2027 se revela el día del certamen.</figcaption></figure>
@@ -868,10 +868,9 @@ a,button,summary,label{-webkit-tap-highlight-color:rgba(255,49,49,.15)}
       <details open><summary>¿Dónde se realiza el certamen?</summary><p>En el local que la organización asigna e informa previamente a cada participante.</p></details>
       <details><summary>¿Cuántos cortes debo entregar?</summary><p>24 cortes en total: un corte de cada preparación para cada jurado (7 de la Preparación A y 7 de la B) y 10 cortes más para la presentación completa del roll.</p></details>
       <details><summary>¿Los rolls se preparan en el lugar?</summary><p>No. Llegan armados y en el certamen solo se cortan, se agregan toppings y salsas, y se emplatan.</p></details>
-      <details><summary>¿Hay votación del público o de influencers?</summary><p>No. Este año eliminamos las votaciones de influencers y del público: todos los votos que definen el puntaje son de los 7 jurados seleccionados.</p></details>
+      <details><summary>¿Hay jueces de redes sociales o elegidos por el público?</summary><p>No. Este año no hay jueces influencers ni jurados elegidos por el público, y eliminamos esas votaciones, incluido el premio Más Popular. Los 3 premios se definen solo con los votos de los 7 jurados seleccionados.</p></details>
       <details><summary>¿Cuántas personas pueden ir por local?</summary><p>Un representante oficial y hasta dos acompañantes.</p></details>
       <details><summary>¿Qué pasa si me excedo de los 30 minutos?</summary><p>Puede haber penalización o descalificación, según el criterio del Jefe de Jurado.</p></details>
-      <details><summary>¿Cómo se elige el Local Más Popular?</summary><p>Por votación abierta en las redes oficiales del certamen.</p></details>
       <details><summary>¿Puedo ver mi puntaje?</summary><p>Sí, en tiempo real en el sitio web oficial, mientras los jueces evalúan.</p></details>
     </div>
   </div>

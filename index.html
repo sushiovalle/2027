@@ -336,6 +336,9 @@ details.more[open] summary::after{content:"−"}
 @media (max-width:860px){.hp-hero{left:-20px;bottom:-60px;width:52%}}
 @media (max-width:520px){.hp-hero{width:66%;left:-24px;bottom:-50px}}
 .hero{overflow:hidden}
+.novote{display:flex;gap:18px;align-items:flex-start;background:#fff;border:2px solid var(--red);padding:22px 24px;margin-bottom:28px;font-size:16px;line-height:1.5}
+.novote b{display:block;color:var(--ink);font-family:var(--f-display);font-weight:600;font-size:clamp(19px,2vw,23px);letter-spacing:-.015em;margin-bottom:4px;line-height:1.2}
+.nv-ic{flex:none;width:40px;height:40px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-weight:700;font-size:18px}
 /* winners */
 .video{position:relative;display:block;aspect-ratio:16/9;max-width:100%;overflow:hidden;background:#121212;text-decoration:none}
 .video img{width:100%;height:100%;object-fit:cover;opacity:.55;transition:opacity .3s,transform .6s}
@@ -756,6 +759,10 @@ a,button,summary,label{-webkit-tap-highlight-color:rgba(255,49,49,.15)}
       <div><div class="eyebrow">Jurado y evaluación</div><h2>7 jurados con conocimiento en sushi</h2></div>
       <p>Todos califican con la misma pauta y su voto pesa igual. Cada uno firma un compromiso de imparcialidad y su identidad se revela el día del certamen.</p>
     </div>
+    <div class="novote">
+      <span class="nv-ic" aria-hidden="true">✓</span>
+      <div><b>Nuevo en 2027: solo votan jurados seleccionados</b>Este año eliminamos las votaciones de influencers y del público. Todos los votos que definen los premios del jurado vienen de los 7 jurados seleccionados, con la misma pauta para todos.</div>
+    </div>
     <div class="jury"><div class="juror"><svg viewBox="0 0 110 130" aria-hidden="true"><circle cx="55" cy="40" r="32" fill="#DCDCD7"/><path d="M5 130c0-34 22-56 50-56s50 22 50 56z" fill="#DCDCD7"/></svg>Jurado 1</div><div class="juror"><svg viewBox="0 0 110 130" aria-hidden="true"><circle cx="55" cy="40" r="32" fill="#DCDCD7"/><path d="M5 130c0-34 22-56 50-56s50 22 50 56z" fill="#DCDCD7"/></svg>Jurado 2</div><div class="juror"><svg viewBox="0 0 110 130" aria-hidden="true"><circle cx="55" cy="40" r="32" fill="#DCDCD7"/><path d="M5 130c0-34 22-56 50-56s50 22 50 56z" fill="#DCDCD7"/></svg>Jurado 3</div><div class="juror"><svg viewBox="0 0 110 130" aria-hidden="true"><circle cx="55" cy="40" r="32" fill="#DCDCD7"/><path d="M5 130c0-34 22-56 50-56s50 22 50 56z" fill="#DCDCD7"/></svg>Jurado 4</div><div class="juror"><svg viewBox="0 0 110 130" aria-hidden="true"><circle cx="55" cy="40" r="32" fill="#DCDCD7"/><path d="M5 130c0-34 22-56 50-56s50 22 50 56z" fill="#DCDCD7"/></svg>Jurado 5</div><div class="juror"><svg viewBox="0 0 110 130" aria-hidden="true"><circle cx="55" cy="40" r="32" fill="#DCDCD7"/><path d="M5 130c0-34 22-56 50-56s50 22 50 56z" fill="#DCDCD7"/></svg>Jurado 6</div><div class="juror"><svg viewBox="0 0 110 130" aria-hidden="true"><circle cx="55" cy="40" r="32" fill="#DCDCD7"/><path d="M5 130c0-34 22-56 50-56s50 22 50 56z" fill="#DCDCD7"/></svg>Jurado 7</div><div class="juror r">Identidad reservada</div></div>
     <figure class="tvfig" style="margin-top:24px"><img src="img/foto-10.jpg" alt="Jurado de la edición 2026 con credenciales" style="object-position:center 40%"><figcaption><b>Así fue el jurado 2026</b>Profesionales de la gastronomía evaluaron cada propuesta con credencial de jurado. El jurado 2027 se revela el día del certamen.</figcaption></figure>
     <div class="duo">
@@ -861,6 +868,7 @@ a,button,summary,label{-webkit-tap-highlight-color:rgba(255,49,49,.15)}
       <details open><summary>¿Dónde se realiza el certamen?</summary><p>En el local que la organización asigna e informa previamente a cada participante.</p></details>
       <details><summary>¿Cuántos cortes debo entregar?</summary><p>24 cortes en total: un corte de cada preparación para cada jurado (7 de la Preparación A y 7 de la B) y 10 cortes más para la presentación completa del roll.</p></details>
       <details><summary>¿Los rolls se preparan en el lugar?</summary><p>No. Llegan armados y en el certamen solo se cortan, se agregan toppings y salsas, y se emplatan.</p></details>
+      <details><summary>¿Hay votación del público o de influencers?</summary><p>No. Este año eliminamos las votaciones de influencers y del público: todos los votos que definen el puntaje son de los 7 jurados seleccionados.</p></details>
       <details><summary>¿Cuántas personas pueden ir por local?</summary><p>Un representante oficial y hasta dos acompañantes.</p></details>
       <details><summary>¿Qué pasa si me excedo de los 30 minutos?</summary><p>Puede haber penalización o descalificación, según el criterio del Jefe de Jurado.</p></details>
       <details><summary>¿Cómo se elige el Local Más Popular?</summary><p>Por votación abierta en las redes oficiales del certamen.</p></details>

@@ -342,6 +342,8 @@ details.more[open] summary::after{content:"−"}
 .nv-ic{flex:none;width:40px;height:40px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-weight:700;font-size:18px}
 .wow{background:var(--red);color:#fff;padding:20px 22px}
 .wow b{font-family:var(--f-display);font-weight:600;font-size:clamp(19px,2vw,24px);letter-spacing:-.015em;line-height:1.25;display:block}
+.deliv{display:block;margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.2);font-size:14px}
+.deliv b{font-size:16px!important;margin-bottom:2px!important}
 /* winners */
 .video{position:relative;display:block;aspect-ratio:16/9;max-width:100%;overflow:hidden;background:#121212;text-decoration:none}
 .video img{width:100%;height:100%;object-fit:cover;opacity:.55;transition:opacity .3s,transform .6s}
@@ -626,7 +628,7 @@ a,button,summary,label{-webkit-tap-highlight-color:rgba(255,49,49,.15)}
     <div class="panel" role="tabpanel" id="p-todos" aria-labelledby="t-todos">
       <div class="bens">
         <div class="ben wide"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14z"/><path d="M8.2 13.9 7 23l5-3 5 3-1.2-9.1"/></svg></span><div><h3>Evaluación de jurados con conocimiento en sushi</h3><p>Siete jurados evalúan tu propuesta con una pauta pública. Conoces tu puntaje en cada criterio y sabes en qué destacas y qué puedes mejorar.</p></div></div>
-        <div class="ben"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="m17 2-5 5-5-5"/></svg></span><div><h3>Nota televisiva de 3 minutos</h3><p>Damos a conocer tu negocio, tus preparaciones y tu propuesta con un enfoque profesional.</p></div></div>
+        <div class="ben"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="m17 2-5 5-5-5"/></svg></span><div><h3>Nota televisiva de 3 minutos</h3><p>Damos a conocer tu negocio, tus preparaciones y tu propuesta con un enfoque profesional. Si tienes delivery y no tienes local, coordinamos la entrevista en un lugar apropiado.</p></div></div>
         <div class="ben"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></span><div><h3>Un mes de difusión</h3><p>Tu local aparece en la cadena de difusión del certamen, potenciada por Teleovalle.</p></div></div>
         <div class="ben"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></span><div><h3>Más de 100.000 seguidores</h3><p>El programa se distribuye en Teleovalle, Periférico, Social Magazine y otros medios.</p></div></div>
         <div class="ben"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></span><div><h3>Puntaje en tiempo real</h3><p>Sigues tu evaluación en vivo en el sitio web oficial y te comparas con el resto.</p></div></div>
@@ -822,7 +824,7 @@ a,button,summary,label{-webkit-tap-highlight-color:rgba(255,49,49,.15)}
         <ul class="cover"><li>Televisión local</li><li>Video por local</li><li>Backstage</li><li>Programa especial</li><li>Público en vivo</li><li>Puntaje web en vivo</li></ul>
       </div>
     </div>
-    <figure class="tvfig"><img src="img/foto-13.jpg" alt="Grabación de una nota de Teleovalle en El Señor del Sushi" style="object-position:center 40%"><figcaption><b>Nota televisiva de 3 minutos</b>Cada local participante recibe una nota de Teleovalle que da a conocer su negocio y sus preparaciones.</figcaption></figure>
+    <figure class="tvfig"><img src="img/foto-13.jpg" alt="Grabación de una nota de Teleovalle en El Señor del Sushi" style="object-position:center 40%"><figcaption><b>Nota televisiva de 3 minutos</b>Cada local participante recibe una nota de Teleovalle que da a conocer su negocio y sus preparaciones.<span class="deliv"><b>¿Solo delivery?</b>Si tienes delivery y no tienes local, coordinaremos la entrevista en un lugar apropiado para entrevistarte y mostrar tus preparaciones.</span></figcaption></figure>
     <div class="partners"><div class="partner">Teleovalle</div><div class="partner">Periférico</div><div class="partner">Social Magazine</div><div class="partner other">Otros medios</div><div class="partner org">Organiza<img src="img/foto-04.png" alt="Sabrofest"></div></div>
   </div>
 </section>
@@ -872,6 +874,7 @@ a,button,summary,label{-webkit-tap-highlight-color:rgba(255,49,49,.15)}
       <details><summary>¿Cuántos cortes debo entregar?</summary><p>24 cortes en total: un corte de cada preparación para cada jurado (7 de la Preparación A y 7 de la B) y 10 cortes más para la presentación completa del roll.</p></details>
       <details><summary>¿Los rolls se preparan en el lugar?</summary><p>No. Llegan armados y en el certamen solo se cortan, se agregan toppings y salsas, y se emplatan.</p></details>
       <details><summary>¿Hay jueces de redes sociales o elegidos por el público?</summary><p>No. Este año no hay jueces influencers ni jurados elegidos por el público, y eliminamos esas votaciones, incluido el premio Más Popular. Los 3 premios se definen solo con los votos de los 7 jurados seleccionados.</p></details>
+      <details><summary>Tengo delivery y no tengo local, ¿puedo participar?</summary><p>Sí. Coordinaremos la entrevista de Teleovalle en un lugar apropiado para entrevistarte y mostrar tus preparaciones.</p></details>
       <details><summary>¿Cuántas personas pueden ir por local?</summary><p>Un representante oficial y hasta dos acompañantes.</p></details>
       <details><summary>¿A qué hora me toca presentar?</summary><p>Nosotros te entregaremos el horario en que debes presentar. Desde la señal de inicio tienes 30 minutos para sorprender al jurado.</p></details>
       <details><summary>¿Qué pasa si me excedo de los 30 minutos?</summary><p>Puede haber penalización o descalificación, según el criterio del Jefe de Jurado.</p></details>
